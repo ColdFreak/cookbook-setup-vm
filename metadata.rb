@@ -1,0 +1,7 @@
+name             'setup-vm'
+maintainer       'WANG ZHIJUN'
+maintainer_email 'wzj8698@gmail.com'
+license          'All rights reserved'
+description      'Installs/Configures setup-vm'
+long_description 'Installs/Configures setup-vm'
+version          '0.1.0'
