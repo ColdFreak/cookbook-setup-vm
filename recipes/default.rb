@@ -7,3 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 include_recipe "setup-vm::base"
+include_recipe "setup-vm::git"
