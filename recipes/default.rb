@@ -8,3 +8,4 @@
 #
 include_recipe "setup-vm::base"
 include_recipe "setup-vm::git"
+include_recipe "setup-vm::tmux"
