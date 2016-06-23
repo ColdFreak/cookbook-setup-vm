@@ -1,10 +1,10 @@
 # setup-vm-cookbook
 
-TODO: Enter the cookbook description here.
+Centosに必要なパッケージをインストールします。例えば`tmux`、`git`などです。
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+- Centos7
 
 ## Attributes
 
@@ -39,4 +39,4 @@ Include `setup-vm` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Wang Zhijun
