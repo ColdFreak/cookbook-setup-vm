@@ -25,7 +25,7 @@ when 'rhel'
   end
 end
 
-cookbook_file "default/tmux.conf" do
+cookbook_file "#{ENV['HOME']}/.tmux.conf" do
   source "default/tmux.conf"
   mode '0644'
 end
