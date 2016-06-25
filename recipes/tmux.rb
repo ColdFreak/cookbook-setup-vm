@@ -24,3 +24,8 @@ when 'rhel'
     not_if 'tmux -V | grep "tmux 2"'
   end
 end
+
+cookbook_file "default/tmux.conf" do
+  source "default/tmux.conf"
+  mode '0644'
+end
