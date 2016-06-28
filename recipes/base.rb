@@ -4,11 +4,6 @@ when 'rhel'
     command "yum update -y"
   end
 
-  package "epel-release" do
-    action :install
-    not_if "rpm -qa | grep epel-release"
-  end
-
   node['setup-vm']['rpm-base-packages'].each do |pkg, command|
     package "#{pkg}" do
       action :install
