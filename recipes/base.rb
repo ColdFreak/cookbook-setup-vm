@@ -9,14 +9,14 @@ when 'rhel'
     not_if "rpm -qa | grep epel-release"
   end
 
-  node['setup-vm']['centos-base-packages'].each do |pkg, command| 
+  node['setup-vm']['rpm-base-packages'].each do |pkg, command| 
     package "#{pkg}" do
       action :install
       not_if "which #{command}"
     end
   end
 
-  node['setup-vm']['centos-dev-packages'].each do |pkg| 
+  node['setup-vm']['rpm-dev-packages'].each do |pkg| 
     package "#{pkg}" do
       action :install
       not_if "rpm -qa | grep #{pkg}"
