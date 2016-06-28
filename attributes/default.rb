@@ -1,4 +1,4 @@
-default['setup-vm']['rpm-base-packages'] = {"mlocate" => "locate", "jq" => "jq", "httpie" => "http","htop" => "htop", "etcd" => "etcdctl", "bzip2" => "bzip2", "s3cmd" => "s3cmd"}
+default['setup-vm']['rpm-base-packages'] = {"mlocate" => "locate", "jq" => "jq", "httpie" => "http","htop" => "htop", "etcd" => "etcdctl", "bzip2" => "bzip2", "s3cmd" => "s3cmd", "haproxy" => "haproxy"}
 default['setup-vm']['rpm-dev-packages'] = %w{libevent-devel make gcc-c++ curl-devel gcc openssl-devel expat-devel gettext asciidoc xmlto ncurses-devel java-1.8.0-openjdk-devel perl-ExtUtils-MakeMaker}
 
 
